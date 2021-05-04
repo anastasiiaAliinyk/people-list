@@ -1,6 +1,6 @@
-export const BASE_URL = 'https://swapi.dev/api';
+const BASE_URL = 'https://swapi.dev/api';
 
-export const request = async(url, options) => {
+const request = async(url, options) => {
   const response = await fetch(`${BASE_URL}${url}`, options);
 
   if (!response.ok) {

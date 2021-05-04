@@ -3,7 +3,6 @@ import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
-import './App.css';
 import { UsersList } from './UsersList.js';
 import { AddComment } from './AddComment.js';
 import { CommentsList } from './CommentsList.js';
