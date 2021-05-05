@@ -11,8 +11,7 @@ import Typography from '@material-ui/core/Typography';
 const styles = (theme) => ({
   root: {
     margin: 0,
-    padding: theme.spacing(2),
-    minWidth: '50vw',
+    padding: theme.spacing(3),
   },
   closeButton: {
     position: 'absolute',
@@ -60,9 +59,10 @@ export const CommentsList = ({
   };
 
   return (
-    <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
+    <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open} maxWidth="xs" fullWidth={true}>
       <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-        All comments ({selectedUserName})
+        All comments 
+        ({selectedUserName})
       </DialogTitle>
       <DialogContent dividers>
         {comments && comments.map((comment, id) => (
